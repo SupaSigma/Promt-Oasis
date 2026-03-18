@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Great+Vibes&family=Dancing+Script&display=swap');
+
+@theme {
+  --font-display: "Montserrat", "Playfair Display", serif;
+  --font-script: "Great Vibes", "Dancing Script", cursive;
+  --color-eggshell: #F0EAD6;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-eggshell overflow-hidden;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bg-blur-overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.2);
+}
